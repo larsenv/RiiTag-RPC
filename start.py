@@ -15,6 +15,11 @@ from prompt_toolkit.widgets import Frame
 import menus
 from riitag import oauth2, user, watcher, presence, preferences
 
+import logging
+
+logging.basicConfig(filename='bruh.log', level=logging.DEBUG,
+                    format="%(asctime)s | %(levelname)s:%(name)s:%(message)s")
+
 nest_asyncio.apply()
 
 # Get resource when frozen with PyInstaller
